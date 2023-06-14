@@ -39,7 +39,9 @@ body{
   width: 55rem;
   padding:5rem;
   background-color: var(--neutral-gray-blue);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+  -webkit-box-shadow: 17px 15px 21px 8px rgba(40,46,58,0.78);
+-moz-box-shadow: 17px 15px 21px 8px rgba(40,46,58,0.78);
+box-shadow: 17px 15px 21px 8px rgba(40,46,58,0.78);
 }
 
 .title{
@@ -50,6 +52,7 @@ body{
   letter-spacing: 3px;
   color: var(--primary-green);
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .advice-text{
@@ -58,6 +61,7 @@ body{
   font-size: 2.8rem;
   text-align: center;
   color: var(--primary-cyan);
+  padding-bottom: 2rem;
 }
 
 .horizontal-mobile svg path{
@@ -66,6 +70,11 @@ body{
 
 .horizontal-mobile{
   display: none;
+  padding-bottom: 2rem;
+}
+
+.horizontal-desktop{
+  padding-bottom: 1rem;
 }
 
 .dice-button{
@@ -79,6 +88,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.dice-button:hover{
+  box-shadow: 1px 0px 20px 5px rgba(82, 255, 168, 0.77);
 }
 
 .dice-button svg path{
