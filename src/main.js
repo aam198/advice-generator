@@ -15,7 +15,7 @@ async function adviceData() {
   // Place in variables
   const id = jsonData.slip.id;
   const advice = jsonData.slip.advice;
-
+  // Display on component
   title_id.innerHTML += id;
   adviceText.innerHTML += advice;
 }
